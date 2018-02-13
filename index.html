@@ -1,0 +1,36 @@
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script src="market.js"></script>
+<div class="container" >
+  <h2>Coins List</h2>
+  <div class="table-responsive">
+  <table class="table table-bordered table-hover table-striped" id="coinslist">
+    <thead>
+      <tr>
+        <th>#&nbsp &nbsp </th>
+        <th> Name</th>
+        <th>Market Cap</th>
+        <th>Price</th>
+        <th>Volume (24h)</th>
+        <th>Circulating Supply</th>
+        <th>Change (24h)</th>
+
+      </tr>
+    </thead>
+  <tbody id="body">
+
+  </tbody>
+</table>
+<p style="text-align:right;"><button class="btn btn-info" onClick="previous()"><span class="glyphicon glyphicon-chevron-left"></span>PREVIOUS 50</button>   <button class="btn btn-info" onClick="next()">NEXT 50 <span class="glyphicon glyphicon-chevron-right"></span></button></p>
+</div>
+</div>
+
+</body>
+</html>
